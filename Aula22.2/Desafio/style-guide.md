@@ -11,7 +11,7 @@
 
 - Azul muito claro: hsl(225, 100%, 98%)
 - Azul dessaturado: hsl (224, 23%, 55%)
-- Azul escuro: hsl (223, 47%, 23%)
+- Azul escuro: hsl (245, 75%, 52%)
 
 ## Tipografia
 
