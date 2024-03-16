@@ -5,26 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      margin: 0%;
+      font-family: 'Open Sans';
+    }
+
+    h1{
+      font-family: 'Poppins';
+      font-weight: 600;
+    }
+
+    .p1{
+      margin: 0%;
+      padding: 0%;
+      background-color: hsl(193, 100%, 96%);
+      background-image: url(../landing-page/images/bg-hero-desktop.svg);
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .logo{
+      margin: 70px 0px 30px 100px;
+      width: 12%;
+      height: auto;
+    }
+
+    .tentar{
+      font-weight: 700;
+      margin: 60px 80px 0px 0px;
+      text-align: center;
+      background-color: white;
+      color: hsl(208, 11%, 55%);
+      width: 250px;
+      height: 50px;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+      float: right;
+    }
+
+    .cabeca button:hover,
+    .cabeca button:focus{
+      box-shadow: 0px 0px 50px -20px black;
+    }
+
+    .corpo{
+      display: flex;
+      flex-flow: nowrap;
+    }
+
+    .conteudo1{
+      margin: 70px 0px 0px 50px;
+    }
+
+    .titulo1{
+      margin: 20px 80px 10px 55px;
+      padding-right: 90px;
+    }
+
+    .apresentacao{
+      margin: 30px 60px 0px 55px;
+      font-weight: 400;
+      padding-right: 50px;
+    }
+
+    .btn-rosa{
+      font-weight: 700;
+      margin: 30px 60px 100px 50px;
+      text-align: center;
+      background-color: hsl(322, 100%, 66%);
+      color: white;
+      width: 250px;
+      height: 50px;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+    }
+
+    .corpo button:hover,
+    .corpo button:focus{
+      background-color: #FF9BDB;
+      box-shadow: 0px 0px 50px -20px hsl(322, 100%, 66%);
+    }
+
+    .foto{
+      width: 130%;
+      flex-grow: 1;
+      position: relative;
+    }
+
+    .bate-papo{
+      width: 700px;
+      height: max-content;
+      margin: 40px 10px 40px 0px;
+    }
+
   </style>
 </head>
 <body>
-
-  Try It Free
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Get Started For Free
-
+  <div class="p1">
+    <header class="cabeca">
+      <img class="logo" src="../landing-page/images/logo.svg" alt="">
+      <button class="tentar">Try It Free</button>
+    </header>
+    <div class="corpo">
+      <div class="conteudo1">
+        <h1 class="titulo1">Build The Community Your Fans Will Love</h1>
+        <p class="apresentacao">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+          Create connections with your users as you engage in genuine discussion
+        </p>
+        <button class="btn-rosa">Get Started For Free</button>
+      </div>
+      <div class="foto">
+        <img class="bate-papo" src="../landing-page/images/illustration-mockups.svg" alt="">
+      </div>
+    </div>
+    <div class="p2">
+      
+    </div>
+  </div>
   Grow Together
 
   Generate meaningful discussions with your audience and build a strong, loyal community. 
