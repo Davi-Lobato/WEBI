@@ -127,10 +127,20 @@
       position: relative;
     }
 
+    .foto img {
+      max-width: 100%;
+      height: auto;
+    }
+
     .bate-papo{
       width: 700px;
       height: max-content;
       margin: 40px 10px 40px 0px;
+    }
+
+    .bate-papo img {
+      max-width: 100%;
+      height: auto;
     }
 
     .p2{
@@ -326,6 +336,129 @@
       border-radius: 20px;
     }
 
+    @media screen and (max-width: 768px) {
+      .corpo{
+        margin: 10px 20px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .conteudo1{
+        margin: 70px 20px 10px 20px;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .foto {
+        width: 70%;
+        margin: 0 auto; 
+        order: 1; 
+      }
+      .bate-papo {
+        width: 100%; 
+        margin: 30px auto; 
+        order: 2; 
+      }
+      .titulo1 {
+        margin: 20px 30px 10px 30px;
+      }
+      .titulo2, .titulo3{
+        margin-left: 0;
+      }
+      .apresentacao, .desc, .desc1 {
+        margin: 0 30px;
+      }
+      .btn-rosa, .btn-rosa2 {
+        margin: 30px 30px 100px;
+      }
+      .bx1{
+        margin-top: 50px;
+      }
+      .bx1, .bx2, .bx3 {
+        flex-direction: column; /* Altera para layout de coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        height: 500px;
+      }
+      .bx1 .apresentacao1,
+      .bx2 .apresentacao2,
+      .bx3 .apresentacao1 {
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 20px; /* Adiciona margem inferior */
+      }
+      .bx1 .img,
+      .bx2 .img,
+      .bx3 .img {
+        align-items: center;
+        width: 100%; /* Ocupa toda a largura disponível */
+      }
+      .img2{
+        margin: auto;
+        display: block;
+        width: auto;
+        height: 300px;
+      }
+      .img4{
+        margin: auto;
+        margin-top: 10px;
+        display: block;
+        width: auto;
+        height: 300px;
+      }
+      .titulo2, .titulo3 {
+        margin-top: 30px;
+      }
+      .loc, .tel, .mail {
+        margin-top: 10px;
+      }
+      .sc2 {
+        margin-right: 20px;
+        padding-right: 0;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .tentar {
+        margin: 30px 20px 0 0;
+        font-size: 14px;
+      }
+      .logo {
+        margin: 30px 0 20px 20px;
+        width: 20%;
+      }
+      .cabeca {
+        padding: 0 10px;
+      }
+      .foto {
+        margin-top: 20px;
+      }
+      .bx1, .bx2, .bx3 {
+        padding: 20px;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      .logo {
+        margin: 20px 0 10px 10px;
+        width: 30%;
+      }
+      .cabeca {
+        padding: 0 5px;
+      }
+      .titulo1 {
+        margin: 10px 20px;
+        font-size: 22px;
+      }
+      .apresentacao, .desc, .desc1 {
+        margin: 0 20px;
+        font-size: 14px;
+      }
+      .btn-rosa, .btn-rosa2 {
+        margin: 20px;
+        font-size: 14px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -359,7 +492,7 @@
         </div>
       </div>
       <div class="bx2">
-        <div class="im3">
+        <div class="img">
           <img class="img4" src="../landing-page/images/illustration-flowing-conversation.svg" alt="">
         </div>
         <div class="apresentacao2">
@@ -380,14 +513,14 @@
         </div>
       </div>
     </div>
-    <div class="p4">
+    <!-- <div class="p4">
       <div class="cx-absoluto">
         <div class="cx">
           <h1>Ready To Built Your Community</h1>
           <button class="btn-rosa2">Get Started</button>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="p3">
       <img class="logo2" src="../landing-page/images/logo.svg" alt="">
       <div class="bx4">
