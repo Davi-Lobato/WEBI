@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta charset="UTF-8">  
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
+  <header class="bg-[url('images/bg-hero-desktop.svg')] bg-cyan-50">
+    <nav class="p-20 flex justify-between">
+      <img src="images/logo.svg" class="scale-75">
+      <button class="px-14 py-2 font-semibold rounded-full bg-stone-100 hover:bg-stone-200 hover:shadow-lg hover:shadow-stone-600/10" >Try It Free</button>
+    </nav>
+    <section class="pl-20 flex flex-nowrap">
+      <section class="pl-20 pr-10 max-w-lg">
+        <h1 class="text-4xl font-bold pr-20">Build The Community Your Fans Will Love</h1>
+        <p>
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+        </p>
+        <button class="px-16 py-2 font-semibold rounded-full bg-pink-500 hover:bg-pink-400 text-white">Get Started For Free</button>
+      </section>
+      <section class="pr-20 flex-grow-1">
+        <img src="images/illustration-mockups.svg" alt="">
+      </section>
+  </section>
+  </header>
+  //media ou screens no framework pra responsividade
   Try It Free
 
   Build The Community Your Fans Will Love
@@ -67,4 +75,5 @@
     </p>
   </footer>
 </body>
+  <script src="https://cdn.tailwindcss.com"></script>
 </html>
